@@ -5,64 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wizytówka - Albert Lichnerowicz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="images/logo.png">
     <meta property="og:image" content="images/share.png">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
-    <h1>
-        <span class="title">Wizytówka - Albert Lichnerowicz</span>
-    </h1>
-    <img class="image" width="200" height="300" src="https://i.postimg.cc/kGd3dksJ/FB-IMG-1688730616453.jpg"
-        alt="Albert Lichnerowicz">
-    <button class="button">Usuń obraz</button>
-    <h2 class="heading">O mnie</h2>
-    <div class="group">
-        <p>Jestem osobą pozytywnie nastawioną do świata. Uwielbiam się uczyć, a poznawanie tego co nowe i nieznane jest
-            dla
-            mnie intrygujące. Dotychczas moja praca była powiązana z handlem oraz turystyką, szukam jednak
-            <em>nowych</em>
-            możliwości rozwoju.
-        </p>
-        <p>Branża IT wydaje się pasować do moich umiejętności i zainteresowań. Dużo czasu spędzam przed komputerem. A w
-            pracy uwielbiałem przekraczać kolejne progi wtajemniczenia, szybko pojmowałem nowe zagadnienia i stawałem
-            się
-            coraz lepszy. To praca w hotelu najbardziej ukierunkowała mnie na pogłębianie wiedzy w tematyce
-            skrótów
-            klawiszowych i ogólnej obsługi komputera. Lubię wykonywać swoją pracę możliwie jak najlepiej i jak
-            najbardziej
-            efektywnie, dlatego z pomocą skrótów i nawyków, coraz bardziej automatyzowałem procedury obsługi gości, jak
-            i samych systemów hotelowych.</p>
-    </div>
-    <h2 class="heading">Doświadczenie</h2>
-    <h3>Satoria Group S.A.</h3>
-    <h4>Zastępca kierownika recepcji</h4>
-    <h5>Grudzień 2021r. - Obecnie</h5>
-    <p><strong>Obecnie zarządzam recepcjami na trzech dużych warszawskich hotelach: <br>Hotel O3, Hotel BW Portos, Hotel
-            Aramis<br></strong>W pracy dysponuję ok. 20 osobowym zespołem, do moich obowiązków należą między innymi:
-        <br>Dbanie o wysoką jakość obsługi<br>Nadzorowanie poprawności wystawianych dokumentów
-        księgowych<br>Przeprowadzanie rekrutacji<br>Tworzenie <i>korekt</i>, grafików, wniosków
-    </p>
-    <h4>Recepcjonista</h4>
-    <h5>Wrzesień 2020r. - Grudzień 2021r.</h5>
-    <h5>Kwiecień 2019r. - Grudzień 2019r.</h5>
-    <p>Jako recepcjonista dbałem w gównej mierze o komfort gości, rozliczanie płatności oraz <b>podnoszenie swoich
-            kwalifikacji</b> </p>
-    <h3>RTV EURO AGD</h3>
-    <h4>Sprzedawca</h4>
-    <h5>Październik 2018r. - Styczeń 2019r.</h5>
-    <p>Bezpośredni kontakt z klientem w celach sprzedażowych</p>
-    <h3>Ceva Logistics</h3>
-    <h4>Operator systemów magazynowych</h4>
-    <h5>Lipiec 2018r. - Październik 2018r.</h5>
-    <p>Praca na komputerze, gdzie z pomocą systemów magazynowych kompletowałem zamówienia dla firm</p>
-    <h2 class="heading">Wykształcenie</h2>
-    <h3>XLII Liceum Ogólnokształcące im. Marii Konopnickiej w Warszawie</h3>
-    <h4>Profil biologiczno-chemiczny</h4>
-    <h5>Wrzesień 2014r. - Maj 2017r.</h5>
-    <p>Ukończyłem szkołę, zdając egzamin maturalny</p>
+<body class="body">
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#oMnie">O mnie</a>
+                </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#doswiadczenie">Doświadczenie</a>
+                </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#zainteresowania">Zainteresowania</a>
+                </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#plany">Plany na przyszłość</a>
+                </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            <span class="header__header">Wizytówka - Albert Lichnerowicz</span>
+        </h1>
+        <img class="header__image" width="200" height="200" src="https://i.postimg.cc/zfqNpV7M/foto.jpg"
+            alt="Albert Lichnerowicz">
+    </header>
+
+    <main>
+        <article class="article" id="oMnie">
+            <section class="article__section">
+                <h2 class="article__header">O mnie</h2>
+                <p class="article__paragraph">Jestem osobą pozytywnie nastawioną do świata. Uwielbiam się uczyć, a
+                    poznawanie
+                    tego co nowe i
+                    nieznane jest
+                    dla
+                    mnie intrygujące. Dotychczas moja praca była powiązana z handlem oraz turystyką, szukam jednak
+                    <em>nowych</em>
+                    możliwości rozwoju.
+                </p>
+                <p class="article__paragraph">Branża IT wydaje się pasować do moich umiejętności i zainteresowań. Dużo
+                    czasu
+                    spędzam przed
+                    komputerem. A w
+                    pracy uwielbiałem przekraczać kolejne progi wtajemniczenia, szybko pojmowałem nowe zagadnienia i
+                    stawałem
+                    się
+                    coraz lepszy. To praca w hotelu najbardziej ukierunkowała mnie na pogłębianie wiedzy w tematyce
+                    skrótów
+                    klawiszowych i ogólnej obsługi komputera. Lubię wykonywać swoją pracę możliwie jak najlepiej i jak
+                    najbardziej
+                    efektywnie, dlatego z pomocą skrótów i nawyków, coraz bardziej automatyzowałem procedury obsługi
+                    gości, jak
+                    i samych systemów hotelowych.</p>
+            </section>
+        </article>
+        <article class="article--special" id="doswiadczenie">
+            <section class="article__section--special">
+                <h2 class="article__header--special">Doświadczenie</h2>
+                <p class="article__paragraph--special">Obecnie zarządzam recepcjami na trzech dużych
+                    warszawskich hotelach. W pracy dysponuję ok. 20 osobowym zespołem. Moje doświadczenie dotyczy przede
+                    wszystkim kontaktu z klientem, niemniej praca przed komputerem nie jest mi obca.
+                </p>
+            </section>
+        </article>
+        <article class="article">
+            <section class="article__section" id="zainteresowania">
+                <h2 class="article__header">Zainteresowania</h2>
+                <p class="article__paragraph">Od dziecka uwielbiałem grać w piłkę nożną. Mogę jasno stwierdzić, że
+                    właśnie to
+                    nazwałbym swoją największą pasją, dalej poruszam się czasem na boisku, chociaż wizja spędzenia
+                    wieczora przed dobrym meczem profesjonalistów wydaje się równie ciekawa. Dodatkowo uwielbiam grać w
+                    gry, zwłaszcza strategie. Obecnie jednak coraz bardziej cenię sobie spędzanie czasu na plaży przy
+                    pięknej pogodzie. Lubię też spędzić wieczór przy dobrym filmie, a poniżej kilka moich ulubionych
+                    produkcji.</p>
+                <div class="container">
+                    <table class="table">
+                        <caption class="table__caption">Moje ulubione filmy</caption>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                            <th class="table__cell table__cell--header" scope="col">Reżyser</th>
+                            <th class="table__cell table__cell--header" scope="col">Rok wydania</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Władca Pierścieni: Powrót
+                                króla</th>
+                            <td class="table__cell">Peter Jackson</td>
+                            <td class="table__cell">2003</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Doktor Strange</th>
+                            <td class="table__cell">Scott Derrickson</td>
+                            <td class="table__cell">2016</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">UCIEKAJ!</th>
+                            <td class="table__cell">Jordan Peele</td>
+                            <td class="table__cell">2017</td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="article__list">
+                    <li class="article__listItem">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.filmweb.pl/film/W%C5%82adca+Pier%C5%9Bcieni%3A+Powr%C3%B3t+kr%C3%B3la-2003-11841">
+                            O filmie Władca Pierścieni: Powrót króla (zawartość otworzy się w nowej karcie)
+                        </a>
+                    </li>
+                    <li class="article__listItem">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.filmweb.pl/film/Doktor+Strange-2016-482376">
+                            O filmie Doktor Strange (zawartość otworzy się w nowej karcie)
+                        </a>
+                    </li>
+                    <li class="article__listItem">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.filmweb.pl/film/Uciekaj-2017-750704">
+                            O filmie Uciekaj! (zawartość otworzy się w nowej karcie)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article class="article--special" id="plany">
+            <section class="article__section--special">
+                <h2 class="article__header--special">Plany na przyszłość</h2>
+                <p class="article__paragraph--special">A skoro zdążyłem już wspomnieć o plaży, pięknej pogodzie i drinkach z palemką to zdecydowanie
+                    Teneryfa.
+                    To miejsce
+                    w którym chciałbym się znaleźć na znacznie dłużej. Tutaj upatruję swoje nadchodzące lata.</p>
+                <p class="article__paragraph--special">Zawodowe plany kręcą się w okolicach IT, możliwość pracy zdalnej,
+                    dobre
+                    zarobki
+                    adekwatne do zdobywanej wiedzy, to brzmi jak praca właśnie dla mnie. W dalszej przyszłości chciałbym
+                    stworzyć własną aplikację.</p>
+            </section>
+        </article>
+    </main>
+    <footer class="footer" id="kontakt">
+        <p class="footer__paragraf">Kontakt email: <a class="footer__link"
+                href="mailto:exaple@exaple.pl">exaple@exaple.pl</a></p>
+        <p class="footer__paragraf">Kontakt telefoniczny: <a class="footer__link" href="tel:+48.111111111">+48 111 111
+                111</a></p>
+        <p class="footer__paragraf">Social media:</p>
+        <p class="footer__paragraf"><a class="footer__link" rel="noreferrer noopener" target="_blank" href="exaple">
+                <img class="footer__image" width="25" height="25"
+                    src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png"
+                    alt="Logo Instagram"><br>exaple_123</a></p>
+        <p class="footer__paragraf"><a class="footer__link" rel="noreferrer noopener" target="_blank" href="exaple">
+                <img class="footer__image" width="25" height="25"
+                    src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-white-f.png"
+                    alt="Logo Facebook"><br>Exaple Exaple</a></p>
+    </footer>
 </body>
 
 </html>

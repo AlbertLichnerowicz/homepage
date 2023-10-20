@@ -1,18 +1,15 @@
-.heading {
-    background-color: rgb(24, 24, 24);
-    color: #ffffffdc;
+html {
+    box-sizing: border-box;
 }
 
-.group {
-    color: rgba(6, 14, 50, 0.855);
+*,
+::before,
+::after {
+    box-sizing: inherit;
 }
 
-.title {
-    background-color: rgb(24,24,24);
-    color: #ffffff;
-}
-
-.button {
-    background-color: black;
-    color: #ffffff;
+.body{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
 }

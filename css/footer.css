@@ -1,0 +1,20 @@
+.footer {
+    text-align: center;
+    background-color: #000000;
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__link {
+    color: #00750a;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    padding: 2px;
+}
